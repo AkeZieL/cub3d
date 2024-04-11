@@ -1,0 +1,889 @@
+oh-my-zsh diagnostic dump
+
+omz_diagdump_20231123-160340.txt
+
+Thu 23 Nov 2023 04:03:40 PM CET
+Linux c3r1p2.42perpignan.fr 5.4.0-164-generic #181-Ubuntu SMP Fri Sep 1 13:41:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+OSTYPE=linux-gnu
+ZSH_VERSION=5.8
+User: bhennequ
+umask: 022
+
+OS Release: Ubuntu-Server 20.04.3 2022.09.27 (Cubic 2022-09-27 11:39)
+/etc/lsb-release:
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu-Server 20.04.3 2022.09.27 (Cubic 2022-09-27 11:39)"
+
+/etc/os-release:
+NAME="Ubuntu"
+VERSION="20.04.3 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu-Server 20.04.3 2022.09.27 (Cubic 2022-09-27 11:39)"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+/etc/debian_version:
+bullseye/sid
+
+
+sh is     /usr/bin/sh           SHA 803ffdb71aa236aa25009bef97db1b8ad0e3c62b ( -> /usr/bin/dash )
+zsh is    /usr/bin/zsh          SHA a87f9bf9261b3add4fd2445c9c4e1981a7edeef5
+ksh: not found
+bash is   /usr/bin/bash         SHA 439667f622b84ecb9f381be93cc9139f83a92f66
+sed is    /usr/bin/sed          SHA 1970086487aae151bc8160035acd9fe6cf3fb34b
+cat is    /usr/bin/cat          SHA 00216393538702616d9ba663141ca8063b901f58
+grep is   grep: aliased to grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox} 
+ls is     ls: aliased to ls --color=tty 
+find is   /usr/bin/find         SHA 3c326e1993103b601cb91de8552ce5c0d9d159ff
+git is    /usr/bin/git          SHA 9322eeb62ebe7934e00a2edd4c85e71ab474a557
+posh: not found
+
+Command Versions:
+zsh: zsh 5.8 (x86_64-ubuntu-linux-gnu)
+this zsh session: 5.8
+bash: GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+git: git version 2.25.1
+grep: grep (GNU grep) 3.4
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Mike Haertel and others; see
+<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>.
+
+Core command check:
+All core commands are defined normally
+
+Process state:
+pwd: /nfs/homes/bhennequ/Cub3d/gitnew
+Process tree for this shell:
+zsh(2202325)---pstree(2218647)
+DISPLAY=:0
+FPATH=/nfs/homes/bhennequ/.oh-my-zsh/plugins/git:/nfs/homes/bhennequ/.oh-my-zsh/functions:/nfs/homes/bhennequ/.oh-my-zsh/completions:/nfs/homes/bhennequ/.oh-my-zsh/cache/completions:/usr/local/share/zsh/site-functions:/usr/share/zsh/vendor-functions:/usr/share/zsh/vendor-completions:/usr/share/zsh/functions/Calendar:/usr/share/zsh/functions/Chpwd:/usr/share/zsh/functions/Completion:/usr/share/zsh/functions/Completion/AIX:/usr/share/zsh/functions/Completion/BSD:/usr/share/zsh/functions/Completion/Base:/usr/share/zsh/functions/Completion/Cygwin:/usr/share/zsh/functions/Completion/Darwin:/usr/share/zsh/functions/Completion/Debian:/usr/share/zsh/functions/Completion/Linux:/usr/share/zsh/functions/Completion/Mandriva:/usr/share/zsh/functions/Completion/Redhat:/usr/share/zsh/functions/Completion/Solaris:/usr/share/zsh/functions/Completion/Unix:/usr/share/zsh/functions/Completion/X:/usr/share/zsh/functions/Completion/Zsh:/usr/share/zsh/functions/Completion/openSUSE:/usr/share/zsh/functions/Exceptions:/usr/share/zsh/functions/MIME:/usr/share/zsh/functions/Math:/usr/share/zsh/functions/Misc:/usr/share/zsh/functions/Newuser:/usr/share/zsh/functions/Prompts:/usr/share/zsh/functions/TCP:/usr/share/zsh/functions/VCS_Info:/usr/share/zsh/functions/VCS_Info/Backends:/usr/share/zsh/functions/Zftp:/usr/share/zsh/functions/Zle
+LANG=en_US.UTF-8
+PATH=/nfs/homes/bhennequ/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+TERM=xterm-256color
+TTY=/dev/pts/0
+TTYIDLE=-1
+ZSH=/nfs/homes/bhennequ/.oh-my-zsh
+ZSH_ARGZERO=zsh
+ZSH_CACHE_DIR=/nfs/homes/bhennequ/.oh-my-zsh/cache
+ZSH_COMPDUMP=/nfs/homes/bhennequ/.zcompdump-c3r1p2-5.8
+ZSH_CUSTOM=/nfs/homes/bhennequ/.oh-my-zsh/custom
+ZSH_EVAL_CONTEXT=toplevel:shfunc:shfunc
+ZSH_NAME=zsh
+ZSH_PATCHLEVEL=ubuntu/5.8-3ubuntu1.1
+ZSH_SUBSHELL=1
+ZSH_THEME=robbyrussell
+ZSH_THEME_GIT_PROMPT_CLEAN=$'%{\C-[[34m%})'
+ZSH_THEME_GIT_PROMPT_DIRTY=$'%{\C-[[34m%}) %{\C-[[33m%}✗'
+ZSH_THEME_GIT_PROMPT_PREFIX=$'%{\C-[[01;34m%}git:(%{\C-[[31m%}'
+ZSH_THEME_GIT_PROMPT_SUFFIX=$'%{\C-[[00m%} '
+ZSH_THEME_RUBY_PROMPT_PREFIX='('
+ZSH_THEME_RUBY_PROMPT_SUFFIX=')'
+ZSH_THEME_RVM_PROMPT_OPTIONS='i v g'
+ZSH_THEME_TERM_TAB_TITLE_IDLE='%15<..<%~%<<'
+ZSH_THEME_TERM_TITLE_IDLE='%n@%m:%~'
+ZSH_VERSION=5.8
+plugins=( git )
+precmd_functions=( omz_termsupport_precmd omz_termsupport_cwd )
+preexec_functions=( omz_termsupport_preexec )
+
+Exported:
+COLORTERM DBUS_SESSION_BUS_ADDRESS DESKTOP_SESSION DISPLAY DOCKER_HOST GDMSESSION GJS_DEBUG_OUTPUT GJS_DEBUG_TOPICS GNOME_DESKTOP_SESSION_ID GNOME_TERMINAL_SCREEN GNOME_TERMINAL_SERVICE GPG_AGENT_INFO GTK_MODULES HOME IM_CONFIG_PHASE INVOCATION_ID JOURNAL_STREAM KRB5CCNAME LANG LESS LIBVIRT_DEFAULT_URI LOGNAME LSCOLORS LS_COLORS MANAGERPID OLDPWD PAGER PATH PWD QT_ACCESSIBILITY QT_IM_MODULE SESSION_MANAGER SHELL SHLVL SSH_AGENT_PID SSH_AUTH_SOCK TERM USER VTE_VERSION XAUTHORITY XDG_CONFIG_DIRS XDG_CURRENT_DESKTOP XDG_DATA_DIRS XDG_GREETER_DATA_DIR XDG_MENU_PREFIX XDG_RUNTIME_DIR XDG_SEAT_PATH XDG_SESSION_CLASS XDG_SESSION_DESKTOP XDG_SESSION_PATH XDG_SESSION_TYPE XMODIFIERS ZSH
+
+Locale:
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_CTYPE="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_ALL=
+
+Zsh configuration:
+setopt: alwaystoend autopushd completeinword extendedhistory noflowcontrol histexpiredupsfirst histignoredups histignorespace histverify interactive interactivecomments localoptions localpatterns localtraps longlistjobs promptsubst sharehistory shinstdin
+
+zstyle:
+cache-path
+        :completion:* /nfs/homes/bhennequ/.oh-my-zsh/cache
+command
+        :completion:*:*:*:*:processes 'ps -u bhennequ -o pid,user,comm -w -w'
+command-path
+        :completion:*:sudo:* /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
+ignored-patterns
+        :completion:*:*:*:users adm amanda apache at avahi avahi-autoipd beaglidx bin cacti canna clamav daemon dbus distcache dnsmasq dovecot fax ftp games gdm gkrellmd gopher hacluster haldaemon halt hsqldb ident junkbust kdm ldap lp mail mailman mailnull man messagebus mldonkey mysql nagios named netdump news nfsnobody nobody nscd ntp nut nx obsrun openvpn operator pcap polkitd postfix postgres privoxy pulse pvm quagga radvd rpc rpcuser rpm rtkit scard shutdown squid sshd statd svn sync tftp usbmux uucp vcsa wwwrun xfs '_*'
+list-colors
+        :completion:*:*:kill:*:processes '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
+        :completion:* 'rs=0' 'di=01;34' 'ln=01;36' 'mh=00' 'pi=40;33' 'so=01;35' 'do=01;35' 'bd=40;33;01' 'cd=40;33;01' 'or=40;31;01' 'mi=00' 'su=37;41' 'sg=30;43' 'ca=30;41' 'tw=30;42' 'ow=34;42' 'st=37;44' 'ex=01;32' '*.tar=01;31' '*.tgz=01;31' '*.arc=01;31' '*.arj=01;31' '*.taz=01;31' '*.lha=01;31' '*.lz4=01;31' '*.lzh=01;31' '*.lzma=01;31' '*.tlz=01;31' '*.txz=01;31' '*.tzo=01;31' '*.t7z=01;31' '*.zip=01;31' '*.z=01;31' '*.dz=01;31' '*.gz=01;31' '*.lrz=01;31' '*.lz=01;31' '*.lzo=01;31' '*.xz=01;31' '*.zst=01;31' '*.tzst=01;31' '*.bz2=01;31' '*.bz=01;31' '*.tbz=01;31' '*.tbz2=01;31' '*.tz=01;31' '*.deb=01;31' '*.rpm=01;31' '*.jar=01;31' '*.war=01;31' '*.ear=01;31' '*.sar=01;31' '*.rar=01;31' '*.alz=01;31' '*.ace=01;31' '*.zoo=01;31' '*.cpio=01;31' '*.7z=01;31' '*.rz=01;31' '*.cab=01;31' '*.wim=01;31' '*.swm=01;31' '*.dwm=01;31' '*.esd=01;31' '*.jpg=01;35' '*.jpeg=01;35' '*.mjpg=01;35' '*.mjpeg=01;35' '*.gif=01;35' '*.bmp=01;35' '*.pbm=01;35' '*.pgm=01;35' '*.ppm=01;35' '*.tga=01;35' '*.xbm=01;35' '*.xpm=01;35' '*.tif=01;35' '*.tiff=01;35' '*.png=01;35' '*.svg=01;35' '*.svgz=01;35' '*.mng=01;35' '*.pcx=01;35' '*.mov=01;35' '*.mpg=01;35' '*.mpeg=01;35' '*.m2v=01;35' '*.mkv=01;35' '*.webm=01;35' '*.ogm=01;35' '*.mp4=01;35' '*.m4v=01;35' '*.mp4v=01;35' '*.vob=01;35' '*.qt=01;35' '*.nuv=01;35' '*.wmv=01;35' '*.asf=01;35' '*.rm=01;35' '*.rmvb=01;35' '*.flc=01;35' '*.avi=01;35' '*.fli=01;35' '*.flv=01;35' '*.gl=01;35' '*.dl=01;35' '*.xcf=01;35' '*.xwd=01;35' '*.yuv=01;35' '*.cgm=01;35' '*.emf=01;35' '*.ogv=01;35' '*.ogx=01;35' '*.aac=00;36' '*.au=00;36' '*.flac=00;36' '*.m4a=00;36' '*.mid=00;36' '*.midi=00;36' '*.mka=00;36' '*.mp3=00;36' '*.mpc=00;36' '*.ogg=00;36' '*.ra=00;36' '*.wav=00;36' '*.oga=00;36' '*.opus=00;36' '*.spx=00;36' '*.xspf=00;36' ''
+matcher-list
+        :completion:* 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|=*' 'l:|=* r:|=*'
+menu
+        :completion:*:*:*:*:* select
+single-ignored
+        * show
+special-dirs
+        :completion:* true
+tag-order
+        :completion:*:cd:* local-directories directory-stack path-directories
+url-globbers
+(eval)  :url-quote-magic $'zmodload -i zsh/parameter;\n\t reply=( noglob\n\t\t ${(k)galiases[(R)(* |)(noglob|urlglobber|globurl) *]:-}\n\t\t ${(k)aliases[(R)(* |)(noglob|urlglobber|globurl) *]:-} )'
+url-local-schema
+        :urlglobber ftp file
+url-metas
+        :url-quote-magic:* '*?[]^(|)~#{}='
+url-other-schema
+        :urlglobber http https ftp
+url-seps
+(eval)  :url-quote-magic:* 'reply=(";&<>${histchars[1]}")'
+use-cache
+        :completion:* yes
+
+compaudit output:
+
+$fpath directories:
+ls: cannot access '/nfs/homes/bhennequ/.oh-my-zsh/functions': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.oh-my-zsh/completions': No such file or directory
+ls: cannot access '/usr/share/zsh/vendor-functions': No such file or directory
+drwxr-xr-x  2 bhennequ 2022_perpignan  4096 May 11  2023 /nfs/homes/bhennequ/.oh-my-zsh/cache/completions
+drwxr-xr-x  2 bhennequ 2022_perpignan  4096 Nov 20 10:30 /nfs/homes/bhennequ/.oh-my-zsh/plugins/git
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/local/share/zsh/site-functions
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Calendar
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Chpwd
+drwxr-xr-x 16 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/AIX
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Base
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/BSD
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Cygwin
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Darwin
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Debian
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Linux
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Mandriva
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/openSUSE
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Redhat
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Solaris
+drwxr-xr-x  2 root     root           20480 Oct 20  2022 /usr/share/zsh/functions/Completion/Unix
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/X
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Completion/Zsh
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Exceptions
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Math
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/MIME
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Misc
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Newuser
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Prompts
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/TCP
+drwxr-xr-x  3 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/VCS_Info
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/VCS_Info/Backends
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Zftp
+drwxr-xr-x  2 root     root            4096 Oct 20  2022 /usr/share/zsh/functions/Zle
+drwxr-xr-x  2 root     root            4096 Oct 13 06:29 /usr/share/zsh/vendor-completions
+
+oh-my-zsh installation:
+-rw-r--r-- 1 bhennequ 2022_perpignan  49527 May 11  2023 /nfs/homes/bhennequ/.zcompdump
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 27 14:23 /nfs/homes/bhennequ/.zcompdump-c1r1p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 27 14:23 /nfs/homes/bhennequ/.zcompdump-c1r1p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 12 13:28 /nfs/homes/bhennequ/.zcompdump-c1r1p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 12 13:28 /nfs/homes/bhennequ/.zcompdump-c1r1p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 29 21:34 /nfs/homes/bhennequ/.zcompdump-c1r1p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 29 21:34 /nfs/homes/bhennequ/.zcompdump-c1r1p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 13 17:03 /nfs/homes/bhennequ/.zcompdump-c1r1p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 13 17:03 /nfs/homes/bhennequ/.zcompdump-c1r1p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 24 22:52 /nfs/homes/bhennequ/.zcompdump-c1r1p7-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 24 22:52 /nfs/homes/bhennequ/.zcompdump-c1r1p7-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 16 18:28 /nfs/homes/bhennequ/.zcompdump-c1r1p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 16 18:28 /nfs/homes/bhennequ/.zcompdump-c1r1p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 15 04:04 /nfs/homes/bhennequ/.zcompdump-c1r1p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 15 04:04 /nfs/homes/bhennequ/.zcompdump-c1r1p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 28 18:25 /nfs/homes/bhennequ/.zcompdump-c1r2p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 28 18:25 /nfs/homes/bhennequ/.zcompdump-c1r2p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 25 15:39 /nfs/homes/bhennequ/.zcompdump-c1r2p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 25 15:39 /nfs/homes/bhennequ/.zcompdump-c1r2p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 24 13:45 /nfs/homes/bhennequ/.zcompdump-c1r2p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 24 13:45 /nfs/homes/bhennequ/.zcompdump-c1r2p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 22 15:50 /nfs/homes/bhennequ/.zcompdump-c1r2p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 22 15:50 /nfs/homes/bhennequ/.zcompdump-c1r2p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 22 12:18 /nfs/homes/bhennequ/.zcompdump-c1r3p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 22 12:18 /nfs/homes/bhennequ/.zcompdump-c1r3p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  7 19:24 /nfs/homes/bhennequ/.zcompdump-c1r3p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  7 19:24 /nfs/homes/bhennequ/.zcompdump-c1r3p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 30 19:21 /nfs/homes/bhennequ/.zcompdump-c1r3p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 30 19:21 /nfs/homes/bhennequ/.zcompdump-c1r3p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  2 05:01 /nfs/homes/bhennequ/.zcompdump-c1r3p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  2 05:01 /nfs/homes/bhennequ/.zcompdump-c1r3p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 14 22:14 /nfs/homes/bhennequ/.zcompdump-c1r3p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 14 22:14 /nfs/homes/bhennequ/.zcompdump-c1r3p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  5 15:08 /nfs/homes/bhennequ/.zcompdump-c1r3p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  5 15:08 /nfs/homes/bhennequ/.zcompdump-c1r3p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 21 18:34 /nfs/homes/bhennequ/.zcompdump-c1r3p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 21 18:34 /nfs/homes/bhennequ/.zcompdump-c1r3p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  4 22:21 /nfs/homes/bhennequ/.zcompdump-c1r3p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  4 22:21 /nfs/homes/bhennequ/.zcompdump-c1r3p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 11 13:51 /nfs/homes/bhennequ/.zcompdump-c2r1p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 11 13:51 /nfs/homes/bhennequ/.zcompdump-c2r1p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 23 20:32 /nfs/homes/bhennequ/.zcompdump-c2r1p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 23 20:32 /nfs/homes/bhennequ/.zcompdump-c2r1p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  3 15:10 /nfs/homes/bhennequ/.zcompdump-c2r1p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  3 15:10 /nfs/homes/bhennequ/.zcompdump-c2r1p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  3 12:41 /nfs/homes/bhennequ/.zcompdump-c2r1p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  3 12:41 /nfs/homes/bhennequ/.zcompdump-c2r1p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 12:38 /nfs/homes/bhennequ/.zcompdump-c2r2p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 12:38 /nfs/homes/bhennequ/.zcompdump-c2r2p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 14 11:10 /nfs/homes/bhennequ/.zcompdump-c2r3p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 14 11:10 /nfs/homes/bhennequ/.zcompdump-c2r3p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 16 18:29 /nfs/homes/bhennequ/.zcompdump-c2r3p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 16 18:29 /nfs/homes/bhennequ/.zcompdump-c2r3p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 14 14:33 /nfs/homes/bhennequ/.zcompdump-c2r3p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 14 14:33 /nfs/homes/bhennequ/.zcompdump-c2r3p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 May 25 13:13 /nfs/homes/bhennequ/.zcompdump-c2r3p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 May 25 13:13 /nfs/homes/bhennequ/.zcompdump-c2r3p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 May 31 15:06 /nfs/homes/bhennequ/.zcompdump-c2r4p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 May 31 15:06 /nfs/homes/bhennequ/.zcompdump-c2r4p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 20 18:32 /nfs/homes/bhennequ/.zcompdump-c2r4p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 20 18:32 /nfs/homes/bhennequ/.zcompdump-c2r4p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 11 19:32 /nfs/homes/bhennequ/.zcompdump-c2r4p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 11 19:32 /nfs/homes/bhennequ/.zcompdump-c2r4p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 24 12:21 /nfs/homes/bhennequ/.zcompdump-c2r4p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 24 12:21 /nfs/homes/bhennequ/.zcompdump-c2r4p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jun 29 13:48 /nfs/homes/bhennequ/.zcompdump-c2r4p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jun 29 13:48 /nfs/homes/bhennequ/.zcompdump-c2r4p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct  9 12:43 /nfs/homes/bhennequ/.zcompdump-c2r4p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct  9 12:43 /nfs/homes/bhennequ/.zcompdump-c2r4p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 20 10:30 /nfs/homes/bhennequ/.zcompdump-c2r4p7-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 20 10:30 /nfs/homes/bhennequ/.zcompdump-c2r4p7-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct  3 12:51 /nfs/homes/bhennequ/.zcompdump-c2r4p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct  3 12:51 /nfs/homes/bhennequ/.zcompdump-c2r4p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 31 11:02 /nfs/homes/bhennequ/.zcompdump-c2r4p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 31 11:02 /nfs/homes/bhennequ/.zcompdump-c2r4p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 22 16:32 /nfs/homes/bhennequ/.zcompdump-c2r5p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 22 16:32 /nfs/homes/bhennequ/.zcompdump-c2r5p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  6 14:43 /nfs/homes/bhennequ/.zcompdump-c2r5p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  6 14:43 /nfs/homes/bhennequ/.zcompdump-c2r5p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 10 13:50 /nfs/homes/bhennequ/.zcompdump-c2r5p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 10 13:50 /nfs/homes/bhennequ/.zcompdump-c2r5p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 23 11:32 /nfs/homes/bhennequ/.zcompdump-c2r5p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 23 11:32 /nfs/homes/bhennequ/.zcompdump-c2r5p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  9 11:37 /nfs/homes/bhennequ/.zcompdump-c2r5p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  9 11:37 /nfs/homes/bhennequ/.zcompdump-c2r5p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  2 19:05 /nfs/homes/bhennequ/.zcompdump-c2r5p7-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  2 19:05 /nfs/homes/bhennequ/.zcompdump-c2r5p7-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  6 11:13 /nfs/homes/bhennequ/.zcompdump-c2r5p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  6 11:13 /nfs/homes/bhennequ/.zcompdump-c2r5p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  7 11:44 /nfs/homes/bhennequ/.zcompdump-c2r6p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  7 11:44 /nfs/homes/bhennequ/.zcompdump-c2r6p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 26 17:32 /nfs/homes/bhennequ/.zcompdump-c2r6p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 26 17:32 /nfs/homes/bhennequ/.zcompdump-c2r6p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 21 14:01 /nfs/homes/bhennequ/.zcompdump-c2r6p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 21 14:01 /nfs/homes/bhennequ/.zcompdump-c2r6p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 18 00:44 /nfs/homes/bhennequ/.zcompdump-c2r6p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 18 00:44 /nfs/homes/bhennequ/.zcompdump-c2r6p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 19 16:26 /nfs/homes/bhennequ/.zcompdump-c2r6p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 19 16:26 /nfs/homes/bhennequ/.zcompdump-c2r6p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  2 17:07 /nfs/homes/bhennequ/.zcompdump-c2r6p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  2 17:07 /nfs/homes/bhennequ/.zcompdump-c2r6p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 21 11:29 /nfs/homes/bhennequ/.zcompdump-c2r7p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 21 11:29 /nfs/homes/bhennequ/.zcompdump-c2r7p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 16 12:37 /nfs/homes/bhennequ/.zcompdump-c2r7p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 16 12:37 /nfs/homes/bhennequ/.zcompdump-c2r7p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 11 14:04 /nfs/homes/bhennequ/.zcompdump-c2r7p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 11 14:04 /nfs/homes/bhennequ/.zcompdump-c2r7p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 23 14:39 /nfs/homes/bhennequ/.zcompdump-c2r8p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 23 14:39 /nfs/homes/bhennequ/.zcompdump-c2r8p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  5 17:05 /nfs/homes/bhennequ/.zcompdump-c2r8p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  5 17:05 /nfs/homes/bhennequ/.zcompdump-c2r8p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 13:01 /nfs/homes/bhennequ/.zcompdump-c3r1p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 13:01 /nfs/homes/bhennequ/.zcompdump-c3r1p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 23 14:54 /nfs/homes/bhennequ/.zcompdump-c3r1p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 23 14:54 /nfs/homes/bhennequ/.zcompdump-c3r1p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 15:23 /nfs/homes/bhennequ/.zcompdump-c3r1p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 15:23 /nfs/homes/bhennequ/.zcompdump-c3r1p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 15:14 /nfs/homes/bhennequ/.zcompdump-c3r1p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 15:14 /nfs/homes/bhennequ/.zcompdump-c3r1p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 19 00:28 /nfs/homes/bhennequ/.zcompdump-c3r4p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 19 00:28 /nfs/homes/bhennequ/.zcompdump-c3r4p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jun 23 12:22 /nfs/homes/bhennequ/.zcompdump-c3r4p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jun 23 12:22 /nfs/homes/bhennequ/.zcompdump-c3r4p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 19 18:04 /nfs/homes/bhennequ/.zcompdump-c3r5p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 19 18:04 /nfs/homes/bhennequ/.zcompdump-c3r5p8-5.8.zwc
+-rw------- 1 bhennequ 2022_perpignan 343373 Nov 23 16:03 /nfs/homes/bhennequ/.zsh_history
+-rw-r--r-- 1 bhennequ 2022_perpignan   3866 May 11  2023 /nfs/homes/bhennequ/.zshrc
+-rw-r--r-- 1 bhennequ 2022_perpignan     29 May 11  2023 /nfs/homes/bhennequ/.zshrc.pre-oh-my-zsh
+drwxr-xr-x 12 bhennequ 2022_perpignan 4096 Oct 23 16:13 /nfs/homes/bhennequ/.oh-my-zsh
+
+oh-my-zsh git state:
+HEAD: c8e600f39779c6d2ef75b40304b5391a541c41df
+origin	https://github.com/ohmyzsh/ohmyzsh.git (fetch)
+origin	https://github.com/ohmyzsh/ohmyzsh.git (push)
+On branch master
+Your branch is up to date with 'origin/master'.
+nothing to commit, working tree clean
+c8e600f HEAD@{Mon Nov 20 10:30:48 2023 +0100}: pull --quiet --rebase origin master: checkout c8e600f39779c6d2ef75b40304b5391a541c41df
+632ed41 HEAD@{Mon Nov 6 11:13:32 2023 +0100}: pull --quiet --rebase origin master: checkout 632ed413a9ce62747ded83d7736491b081be4b49
+1868c15 HEAD@{Mon Oct 23 16:13:45 2023 +0200}: pull --quiet --rebase origin master: checkout 1868c15ec6b13c2da20375780f1e8b8f61458be5
+b75b01a HEAD@{Mon Oct 9 12:42:56 2023 +0200}: pull --quiet --rebase origin master: checkout b75b01a3092e59cd10ff01084d4a5e3ac0be3e3a
+a17789e HEAD@{Mon Sep 25 12:37:55 2023 +0200}: pull --quiet --rebase origin master: checkout a17789eedea4f6b9b5a9c970174d6d5dc0ef64ee
+38ef519 HEAD@{Mon Sep 11 16:59:56 2023 +0200}: pull --quiet --rebase origin master: checkout 38ef5192cb1c43159b516d15ab8fed96f847b36b
+03a0d5b HEAD@{Mon Aug 28 18:25:09 2023 +0200}: pull --quiet --rebase origin master: checkout 03a0d5bbaedc732436b5c67b166cde954817cc2f
+fd219a9 HEAD@{Mon Aug 14 11:10:53 2023 +0200}: pull --quiet --rebase origin master: checkout fd219a94ab585fa699a0e842335a9f33dcbb613b
+4188b22 HEAD@{Mon Jul 31 22:50:13 2023 +0200}: pull --quiet --rebase origin master: checkout 4188b22aea3356a02768505103e42a96d18547a3
+fe4b565 HEAD@{Thu Jul 13 17:03:54 2023 +0200}: pull --quiet --rebase origin master: checkout fe4b5659863c388786986d70fa6d1bb66b00afb6
+8a6fc5c HEAD@{Wed Jun 21 13:26:03 2023 +0200}: pull --quiet --rebase origin master: checkout 8a6fc5c16d49368dc8f9ddd965a9e25ef652e129
+115cee1 HEAD@{Wed Jun 7 11:53:06 2023 +0200}: pull --quiet --rebase origin master: checkout 115cee17015e4b5665e16dc4fd15c53e06a22f9a
+5901f30 HEAD@{Thu May 25 13:13:29 2023 +0200}: pull --quiet --rebase origin master: checkout 5901f30b44fc5a3055e6b801d3d71af6d2359ee8
+
+oh-my-zsh custom dir:
+   /nfs/homes/bhennequ/.oh-my-zsh/custom (/nfs/homes/bhennequ/.oh-my-zsh/custom)
+custom
+custom/themes
+custom/themes/example.zsh-theme
+custom/plugins
+custom/plugins/example
+custom/plugins/example/example.plugin.zsh
+custom/example.zsh
+
+bindkey:
+"^@" set-mark-command
+"^A" beginning-of-line
+"^B" backward-char
+"^D" delete-char-or-list
+"^E" end-of-line
+"^F" forward-char
+"^G" send-break
+"^H" backward-delete-char
+"^I" expand-or-complete
+"^J" accept-line
+"^K" kill-line
+"^L" clear-screen
+"^M" accept-line
+"^N" down-line-or-history
+"^O" accept-line-and-down-history
+"^P" up-line-or-history
+"^Q" push-line
+"^R" history-incremental-search-backward
+"^S" history-incremental-search-forward
+"^T" transpose-chars
+"^U" kill-whole-line
+"^V" quoted-insert
+"^W" backward-kill-word
+"^X^B" vi-match-bracket
+"^X^E" edit-command-line
+"^X^F" vi-find-next-char
+"^X^J" vi-join
+"^X^K" kill-buffer
+"^X^N" infer-next-history
+"^X^O" overwrite-mode
+"^X^R" _read_comp
+"^X^U" undo
+"^X^V" vi-cmd-mode
+"^X^X" exchange-point-and-mark
+"^X*" expand-word
+"^X=" what-cursor-position
+"^X?" _complete_debug
+"^XC" _correct_filename
+"^XG" list-expand
+"^Xa" _expand_alias
+"^Xc" _correct_word
+"^Xd" _list_expansions
+"^Xe" _expand_word
+"^Xg" list-expand
+"^Xh" _complete_help
+"^Xm" _most_recent_file
+"^Xn" _next_tags
+"^Xr" history-incremental-search-backward
+"^Xs" history-incremental-search-forward
+"^Xt" _complete_tag
+"^Xu" undo
+"^X~" _bash_list-choices
+"^Y" yank
+"^[^D" list-choices
+"^[^G" send-break
+"^[^H" backward-kill-word
+"^[^I" self-insert-unmeta
+"^[^J" self-insert-unmeta
+"^[^L" clear-screen
+"^[^M" self-insert-unmeta
+"^[^_" copy-prev-word
+"^[ " expand-history
+"^[!" expand-history
+"^[\"" quote-region
+"^[\$" spell-word
+"^['" quote-line
+"^[," _history-complete-newer
+"^[-" neg-argument
+"^[." insert-last-word
+"^[/" _history-complete-older
+"^[0" digit-argument
+"^[1" digit-argument
+"^[2" digit-argument
+"^[3" digit-argument
+"^[4" digit-argument
+"^[5" digit-argument
+"^[6" digit-argument
+"^[7" digit-argument
+"^[8" digit-argument
+"^[9" digit-argument
+"^[<" beginning-of-buffer-or-history
+"^[>" end-of-buffer-or-history
+"^[?" which-command
+"^[A" accept-and-hold
+"^[B" backward-word
+"^[C" capitalize-word
+"^[D" kill-word
+"^[F" forward-word
+"^[G" get-line
+"^[H" run-help
+"^[L" down-case-word
+"^[N" history-search-forward
+"^[OA" up-line-or-beginning-search
+"^[OB" down-line-or-beginning-search
+"^[OC" forward-char
+"^[OD" backward-char
+"^[OF" end-of-line
+"^[OH" beginning-of-line
+"^[P" history-search-backward
+"^[Q" push-line
+"^[S" spell-word
+"^[T" transpose-words
+"^[U" up-case-word
+"^[W" copy-region-as-kill
+"^[[1;5C" forward-word
+"^[[1;5D" backward-word
+"^[[200~" bracketed-paste
+"^[[2~" overwrite-mode
+"^[[3;5~" kill-word
+"^[[3~" delete-char
+"^[[5~" up-line-or-history
+"^[[6~" down-line-or-history
+"^[[A" up-line-or-history
+"^[[B" down-line-or-history
+"^[[C" forward-char
+"^[[D" backward-char
+"^[[Z" reverse-menu-complete
+"^[_" insert-last-word
+"^[a" accept-and-hold
+"^[b" backward-word
+"^[c" capitalize-word
+"^[d" kill-word
+"^[f" forward-word
+"^[g" get-line
+"^[h" run-help
+"^[l" "ls^J"
+"^[m" copy-prev-shell-word
+"^[n" history-search-forward
+"^[p" history-search-backward
+"^[q" push-line
+"^[s" spell-word
+"^[t" transpose-words
+"^[u" up-case-word
+"^[w" kill-region
+"^[x" execute-named-cmd
+"^[y" yank-pop
+"^[z" execute-last-named-cmd
+"^[|" vi-goto-column
+"^[~" _bash_complete-word
+"^[^?" backward-kill-word
+"^_" undo
+" " magic-space
+"!"-"~" self-insert
+"^?" backward-delete-char
+"\M-^@"-"\M-^?" self-insert
+
+infocmp:
+#	Reconstructed via infocmp from file: /lib/terminfo/x/xterm-256color
+xterm-256color|xterm with 256 colors,
+	auto_right_margin, back_color_erase,
+	backspaces_with_bs, can_change, eat_newline_glitch,
+	has_meta_key, move_insert_mode, move_standout_mode,
+	no_pad_char, prtr_silent,
+	columns#80, init_tabs#8, lines#24, max_colors#0x100,
+	max_pairs#0x10000,
+	acs_chars=``aaffggiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~,
+	back_tab=\E[Z, bell=^G, carriage_return=\r,
+	change_scroll_region=\E[%i%p1%d;%p2%dr,
+	clear_all_tabs=\E[3g, clear_screen=\E[H\E[2J,
+	clr_bol=\E[1K, clr_eol=\E[K, clr_eos=\E[J,
+	column_address=\E[%i%p1%dG,
+	cursor_address=\E[%i%p1%d;%p2%dH, cursor_down=\n,
+	cursor_home=\E[H, cursor_invisible=\E[?25l,
+	cursor_left=^H, cursor_normal=\E[?12l\E[?25h,
+	cursor_right=\E[C, cursor_up=\E[A,
+	cursor_visible=\E[?12;25h, delete_character=\E[P,
+	delete_line=\E[M, enter_alt_charset_mode=\E(0,
+	enter_am_mode=\E[?7h, enter_blink_mode=\E[5m,
+	enter_bold_mode=\E[1m,
+	enter_ca_mode=\E[?1049h\E[22;0;0t,
+	enter_dim_mode=\E[2m, enter_insert_mode=\E[4h,
+	enter_italics_mode=\E[3m, enter_reverse_mode=\E[7m,
+	enter_secure_mode=\E[8m, enter_standout_mode=\E[7m,
+	enter_underline_mode=\E[4m, erase_chars=\E[%p1%dX,
+	exit_alt_charset_mode=\E(B, exit_am_mode=\E[?7l,
+	exit_attribute_mode=\E(B\E[m,
+	exit_ca_mode=\E[?1049l\E[23;0;0t,
+	exit_insert_mode=\E[4l, exit_italics_mode=\E[23m,
+	exit_standout_mode=\E[27m,
+	exit_underline_mode=\E[24m,
+	flash_screen=\E[?5h$<100/>\E[?5l,
+	init_2string=\E[\041p\E[?3;4l\E[4l\E>,
+	initialize_color=\E]4;%p1%d;rgb\072%p2%{255}%*%{1000}%/%2.2X/%p3%{255}%*%{1000}%/%2.2X/%p4%{255}%*%{1000}%/%2.2X\E\,
+	insert_line=\E[L, key_b2=\EOE, key_backspace=\177,
+	key_btab=\E[Z, key_dc=\E[3~, key_down=\EOB, key_end=\EOF,
+	key_enter=\EOM, key_f1=\EOP, key_f10=\E[21~,
+	key_f11=\E[23~, key_f12=\E[24~, key_f13=\E[1;2P,
+	key_f14=\E[1;2Q, key_f15=\E[1;2R, key_f16=\E[1;2S,
+	key_f17=\E[15;2~, key_f18=\E[17;2~, key_f19=\E[18;2~,
+	key_f2=\EOQ, key_f20=\E[19;2~, key_f21=\E[20;2~,
+	key_f22=\E[21;2~, key_f23=\E[23;2~, key_f24=\E[24;2~,
+	key_f25=\E[1;5P, key_f26=\E[1;5Q, key_f27=\E[1;5R,
+	key_f28=\E[1;5S, key_f29=\E[15;5~, key_f3=\EOR,
+	key_f30=\E[17;5~, key_f31=\E[18;5~, key_f32=\E[19;5~,
+	key_f33=\E[20;5~, key_f34=\E[21;5~, key_f35=\E[23;5~,
+	key_f36=\E[24;5~, key_f37=\E[1;6P, key_f38=\E[1;6Q,
+	key_f39=\E[1;6R, key_f4=\EOS, key_f40=\E[1;6S,
+	key_f41=\E[15;6~, key_f42=\E[17;6~, key_f43=\E[18;6~,
+	key_f44=\E[19;6~, key_f45=\E[20;6~, key_f46=\E[21;6~,
+	key_f47=\E[23;6~, key_f48=\E[24;6~, key_f49=\E[1;3P,
+	key_f5=\E[15~, key_f50=\E[1;3Q, key_f51=\E[1;3R,
+	key_f52=\E[1;3S, key_f53=\E[15;3~, key_f54=\E[17;3~,
+	key_f55=\E[18;3~, key_f56=\E[19;3~, key_f57=\E[20;3~,
+	key_f58=\E[21;3~, key_f59=\E[23;3~, key_f6=\E[17~,
+	key_f60=\E[24;3~, key_f61=\E[1;4P, key_f62=\E[1;4Q,
+	key_f63=\E[1;4R, key_f7=\E[18~, key_f8=\E[19~,
+	key_f9=\E[20~, key_home=\EOH, key_ic=\E[2~,
+	key_left=\EOD, key_mouse=\E[M, key_npage=\E[6~,
+	key_ppage=\E[5~, key_right=\EOC, key_sdc=\E[3;2~,
+	key_send=\E[1;2F, key_sf=\E[1;2B, key_shome=\E[1;2H,
+	key_sic=\E[2;2~, key_sleft=\E[1;2D, key_snext=\E[6;2~,
+	key_sprevious=\E[5;2~, key_sr=\E[1;2A,
+	key_sright=\E[1;2C, key_up=\EOA,
+	keypad_local=\E[?1l\E>, keypad_xmit=\E[?1h\E=,
+	memory_lock=\El, memory_unlock=\Em, meta_off=\E[?1034l,
+	meta_on=\E[?1034h, orig_colors=\E]104^G,
+	orig_pair=\E[39;49m, parm_dch=\E[%p1%dP,
+	parm_delete_line=\E[%p1%dM,
+	parm_down_cursor=\E[%p1%dB, parm_ich=\E[%p1%d@,
+	parm_index=\E[%p1%dS, parm_insert_line=\E[%p1%dL,
+	parm_left_cursor=\E[%p1%dD,
+	parm_right_cursor=\E[%p1%dC, parm_rindex=\E[%p1%dT,
+	parm_up_cursor=\E[%p1%dA, print_screen=\E[i,
+	prtr_off=\E[4i, prtr_on=\E[5i,
+	reset_1string=\Ec\E]104^G,
+	reset_2string=\E[\041p\E[?3;4l\E[4l\E>,
+	restore_cursor=\E8, row_address=\E[%i%p1%dd,
+	save_cursor=\E7, scroll_forward=\n, scroll_reverse=\EM,
+	set_a_background=\E[%?%p1%{8}%<%t4%p1%d%e%p1%{16}%<%t10%p1%{8}%-%d%e48;5;%p1%d%;m,
+	set_a_foreground=\E[%?%p1%{8}%<%t3%p1%d%e%p1%{16}%<%t9%p1%{8}%-%d%e38;5;%p1%d%;m,
+	set_attributes=%?%p9%t\E(0%e\E(B%;\E[0%?%p6%t;1%;%?%p5%t;2%;%?%p2%t;4%;%?%p1%p3%|%t;7%;%?%p4%t;5%;%?%p7%t;8%;m,
+	set_tab=\EH, tab=^I, user6=\E[%i%d;%dR, user7=\E[6n,
+	user8=\E[?%[;0123456789]c, user9=\E[c,
+
+Zsh configuration files:
+ls: cannot access '/etc/zshenv': No such file or directory
+ls: cannot access '/etc/zprofile': No such file or directory
+ls: cannot access '/etc/zshrc': No such file or directory
+ls: cannot access '/etc/zlogin': No such file or directory
+ls: cannot access '/etc/zlogout': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.zshenv': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.zprofile': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.zlogin': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.zlogout': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.zsh.pre-oh-my-zsh': No such file or directory
+ls: cannot access '/etc/bashrc': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.bashrc': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.profile': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.bash_profile': No such file or directory
+ls: cannot access '/nfs/homes/bhennequ/.bash_logout': No such file or directory
+-rw-r--r-- 1 root     root            581 Dec  5  2019 /etc/profile
+-rw-r--r-- 1 bhennequ 2022_perpignan 3866 May 11  2023 /nfs/homes/bhennequ/.zshrc
+
+File '/etc/zshenv' does not exist
+File '/etc/zprofile' does not exist
+File '/etc/zshrc' does not exist
+File '/etc/zlogin' does not exist
+File '/etc/zlogout' does not exist
+File '/nfs/homes/bhennequ/.zshenv' does not exist
+File '/nfs/homes/bhennequ/.zprofile' does not exist
+========== /nfs/homes/bhennequ/.zshrc ==========
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle ':omz:update' frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+========== end /nfs/homes/bhennequ/.zshrc ==========
+
+File '/nfs/homes/bhennequ/.zlogin' does not exist
+File '/nfs/homes/bhennequ/.zlogout' does not exist
+File '/nfs/homes/bhennequ/.zsh.pre-oh-my-zsh' does not exist
+File '/etc/bashrc' does not exist
+========== /etc/profile ==========
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "${PS1-}" ]; then
+  if [ "${BASH-}" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+fi
+========== end /etc/profile ==========
+
+File '/nfs/homes/bhennequ/.bashrc' does not exist
+File '/nfs/homes/bhennequ/.profile' does not exist
+File '/nfs/homes/bhennequ/.bash_profile' does not exist
+File '/nfs/homes/bhennequ/.bash_logout' does not exist
+
+Zsh compdump files:
+-rw-r--r-- 1 bhennequ 2022_perpignan  49527 May 11  2023 /nfs/homes/bhennequ/.zcompdump
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 27 14:23 /nfs/homes/bhennequ/.zcompdump-c1r1p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 27 14:23 /nfs/homes/bhennequ/.zcompdump-c1r1p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 12 13:28 /nfs/homes/bhennequ/.zcompdump-c1r1p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 12 13:28 /nfs/homes/bhennequ/.zcompdump-c1r1p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 29 21:34 /nfs/homes/bhennequ/.zcompdump-c1r1p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 29 21:34 /nfs/homes/bhennequ/.zcompdump-c1r1p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 13 17:03 /nfs/homes/bhennequ/.zcompdump-c1r1p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 13 17:03 /nfs/homes/bhennequ/.zcompdump-c1r1p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 24 22:52 /nfs/homes/bhennequ/.zcompdump-c1r1p7-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 24 22:52 /nfs/homes/bhennequ/.zcompdump-c1r1p7-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jul 16 18:28 /nfs/homes/bhennequ/.zcompdump-c1r1p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jul 16 18:28 /nfs/homes/bhennequ/.zcompdump-c1r1p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 15 04:04 /nfs/homes/bhennequ/.zcompdump-c1r1p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 15 04:04 /nfs/homes/bhennequ/.zcompdump-c1r1p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 28 18:25 /nfs/homes/bhennequ/.zcompdump-c1r2p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 28 18:25 /nfs/homes/bhennequ/.zcompdump-c1r2p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 25 15:39 /nfs/homes/bhennequ/.zcompdump-c1r2p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 25 15:39 /nfs/homes/bhennequ/.zcompdump-c1r2p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 24 13:45 /nfs/homes/bhennequ/.zcompdump-c1r2p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 24 13:45 /nfs/homes/bhennequ/.zcompdump-c1r2p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 22 15:50 /nfs/homes/bhennequ/.zcompdump-c1r2p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 22 15:50 /nfs/homes/bhennequ/.zcompdump-c1r2p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 22 12:18 /nfs/homes/bhennequ/.zcompdump-c1r3p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 22 12:18 /nfs/homes/bhennequ/.zcompdump-c1r3p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  7 19:24 /nfs/homes/bhennequ/.zcompdump-c1r3p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  7 19:24 /nfs/homes/bhennequ/.zcompdump-c1r3p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 30 19:21 /nfs/homes/bhennequ/.zcompdump-c1r3p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 30 19:21 /nfs/homes/bhennequ/.zcompdump-c1r3p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  2 05:01 /nfs/homes/bhennequ/.zcompdump-c1r3p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  2 05:01 /nfs/homes/bhennequ/.zcompdump-c1r3p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 14 22:14 /nfs/homes/bhennequ/.zcompdump-c1r3p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 14 22:14 /nfs/homes/bhennequ/.zcompdump-c1r3p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  5 15:08 /nfs/homes/bhennequ/.zcompdump-c1r3p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  5 15:08 /nfs/homes/bhennequ/.zcompdump-c1r3p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 21 18:34 /nfs/homes/bhennequ/.zcompdump-c1r3p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 21 18:34 /nfs/homes/bhennequ/.zcompdump-c1r3p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  4 22:21 /nfs/homes/bhennequ/.zcompdump-c1r3p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  4 22:21 /nfs/homes/bhennequ/.zcompdump-c1r3p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 11 13:51 /nfs/homes/bhennequ/.zcompdump-c2r1p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 11 13:51 /nfs/homes/bhennequ/.zcompdump-c2r1p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 23 20:32 /nfs/homes/bhennequ/.zcompdump-c2r1p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 23 20:32 /nfs/homes/bhennequ/.zcompdump-c2r1p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  3 15:10 /nfs/homes/bhennequ/.zcompdump-c2r1p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  3 15:10 /nfs/homes/bhennequ/.zcompdump-c2r1p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  3 12:41 /nfs/homes/bhennequ/.zcompdump-c2r1p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  3 12:41 /nfs/homes/bhennequ/.zcompdump-c2r1p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 12:38 /nfs/homes/bhennequ/.zcompdump-c2r2p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 12:38 /nfs/homes/bhennequ/.zcompdump-c2r2p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 14 11:10 /nfs/homes/bhennequ/.zcompdump-c2r3p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 14 11:10 /nfs/homes/bhennequ/.zcompdump-c2r3p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 16 18:29 /nfs/homes/bhennequ/.zcompdump-c2r3p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 16 18:29 /nfs/homes/bhennequ/.zcompdump-c2r3p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug 14 14:33 /nfs/homes/bhennequ/.zcompdump-c2r3p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug 14 14:33 /nfs/homes/bhennequ/.zcompdump-c2r3p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 May 25 13:13 /nfs/homes/bhennequ/.zcompdump-c2r3p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 May 25 13:13 /nfs/homes/bhennequ/.zcompdump-c2r3p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 May 31 15:06 /nfs/homes/bhennequ/.zcompdump-c2r4p10-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 May 31 15:06 /nfs/homes/bhennequ/.zcompdump-c2r4p10-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 20 18:32 /nfs/homes/bhennequ/.zcompdump-c2r4p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 20 18:32 /nfs/homes/bhennequ/.zcompdump-c2r4p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 11 19:32 /nfs/homes/bhennequ/.zcompdump-c2r4p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 11 19:32 /nfs/homes/bhennequ/.zcompdump-c2r4p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 24 12:21 /nfs/homes/bhennequ/.zcompdump-c2r4p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 24 12:21 /nfs/homes/bhennequ/.zcompdump-c2r4p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jun 29 13:48 /nfs/homes/bhennequ/.zcompdump-c2r4p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jun 29 13:48 /nfs/homes/bhennequ/.zcompdump-c2r4p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct  9 12:43 /nfs/homes/bhennequ/.zcompdump-c2r4p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct  9 12:43 /nfs/homes/bhennequ/.zcompdump-c2r4p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 20 10:30 /nfs/homes/bhennequ/.zcompdump-c2r4p7-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 20 10:30 /nfs/homes/bhennequ/.zcompdump-c2r4p7-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct  3 12:51 /nfs/homes/bhennequ/.zcompdump-c2r4p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct  3 12:51 /nfs/homes/bhennequ/.zcompdump-c2r4p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 31 11:02 /nfs/homes/bhennequ/.zcompdump-c2r4p9-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 31 11:02 /nfs/homes/bhennequ/.zcompdump-c2r4p9-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 22 16:32 /nfs/homes/bhennequ/.zcompdump-c2r5p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 22 16:32 /nfs/homes/bhennequ/.zcompdump-c2r5p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  6 14:43 /nfs/homes/bhennequ/.zcompdump-c2r5p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  6 14:43 /nfs/homes/bhennequ/.zcompdump-c2r5p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 10 13:50 /nfs/homes/bhennequ/.zcompdump-c2r5p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 10 13:50 /nfs/homes/bhennequ/.zcompdump-c2r5p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 23 11:32 /nfs/homes/bhennequ/.zcompdump-c2r5p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 23 11:32 /nfs/homes/bhennequ/.zcompdump-c2r5p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  9 11:37 /nfs/homes/bhennequ/.zcompdump-c2r5p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  9 11:37 /nfs/homes/bhennequ/.zcompdump-c2r5p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  2 19:05 /nfs/homes/bhennequ/.zcompdump-c2r5p7-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  2 19:05 /nfs/homes/bhennequ/.zcompdump-c2r5p7-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  6 11:13 /nfs/homes/bhennequ/.zcompdump-c2r5p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  6 11:13 /nfs/homes/bhennequ/.zcompdump-c2r5p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  7 11:44 /nfs/homes/bhennequ/.zcompdump-c2r6p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  7 11:44 /nfs/homes/bhennequ/.zcompdump-c2r6p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 26 17:32 /nfs/homes/bhennequ/.zcompdump-c2r6p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 26 17:32 /nfs/homes/bhennequ/.zcompdump-c2r6p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 21 14:01 /nfs/homes/bhennequ/.zcompdump-c2r6p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 21 14:01 /nfs/homes/bhennequ/.zcompdump-c2r6p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 18 00:44 /nfs/homes/bhennequ/.zcompdump-c2r6p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 18 00:44 /nfs/homes/bhennequ/.zcompdump-c2r6p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 19 16:26 /nfs/homes/bhennequ/.zcompdump-c2r6p6-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 19 16:26 /nfs/homes/bhennequ/.zcompdump-c2r6p6-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov  2 17:07 /nfs/homes/bhennequ/.zcompdump-c2r6p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov  2 17:07 /nfs/homes/bhennequ/.zcompdump-c2r6p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 21 11:29 /nfs/homes/bhennequ/.zcompdump-c2r7p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 21 11:29 /nfs/homes/bhennequ/.zcompdump-c2r7p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 16 12:37 /nfs/homes/bhennequ/.zcompdump-c2r7p4-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 16 12:37 /nfs/homes/bhennequ/.zcompdump-c2r7p4-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Oct 11 14:04 /nfs/homes/bhennequ/.zcompdump-c2r7p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Oct 11 14:04 /nfs/homes/bhennequ/.zcompdump-c2r7p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 23 14:39 /nfs/homes/bhennequ/.zcompdump-c2r8p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 23 14:39 /nfs/homes/bhennequ/.zcompdump-c2r8p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep  5 17:05 /nfs/homes/bhennequ/.zcompdump-c2r8p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep  5 17:05 /nfs/homes/bhennequ/.zcompdump-c2r8p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 13:01 /nfs/homes/bhennequ/.zcompdump-c3r1p1-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 13:01 /nfs/homes/bhennequ/.zcompdump-c3r1p1-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Nov 23 14:54 /nfs/homes/bhennequ/.zcompdump-c3r1p2-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Nov 23 14:54 /nfs/homes/bhennequ/.zcompdump-c3r1p2-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 15:23 /nfs/homes/bhennequ/.zcompdump-c3r1p3-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 15:23 /nfs/homes/bhennequ/.zcompdump-c3r1p3-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Aug  9 15:14 /nfs/homes/bhennequ/.zcompdump-c3r1p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Aug  9 15:14 /nfs/homes/bhennequ/.zcompdump-c3r1p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 19 00:28 /nfs/homes/bhennequ/.zcompdump-c3r4p5-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 19 00:28 /nfs/homes/bhennequ/.zcompdump-c3r4p5-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Jun 23 12:22 /nfs/homes/bhennequ/.zcompdump-c3r4p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Jun 23 12:22 /nfs/homes/bhennequ/.zcompdump-c3r4p8-5.8.zwc
+-rw-r--r-- 1 bhennequ 2022_perpignan  50920 Sep 19 18:04 /nfs/homes/bhennequ/.zcompdump-c3r5p8-5.8
+-r--r--r-- 1 bhennequ 2022_perpignan 117984 Sep 19 18:04 /nfs/homes/bhennequ/.zcompdump-c3r5p8-5.8.zwc
